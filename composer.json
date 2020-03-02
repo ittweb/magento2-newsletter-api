@@ -1,0 +1,17 @@
+{
+    "name": "ittweb/newsletter",
+    "description": "Creates an API ENDPOINT that enables to subscribe to the Magento 2 newsletter",
+    "type": "magento2-module",    
+    "version": "1.0.0",
+    "license": [
+        "MIT"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Ittweb\\Newsletter\\": ""
+        }
+    }
+}
