@@ -1,7 +1,19 @@
 <?xml version="1.0"?>
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/newsletter/subscription/:email" method="GET">
+        <service class="Ittweb\Newsletter\Api\SubscriptionInterface" method="isSubscribed" />
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
     <route url="/V1/newsletter/subscription/:email" method="POST">
         <service class="Ittweb\Newsletter\Api\SubscriptionInterface" method="subscribeByEmail" />
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route url="/V1/newsletter/subscription/:email" method="DELETE">
+        <service class="Ittweb\Newsletter\Api\SubscriptionInterface" method="deleteByEmail" />
         <resources>
             <resource ref="anonymous"/>
         </resources>
