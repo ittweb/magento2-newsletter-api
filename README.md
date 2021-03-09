@@ -22,10 +22,10 @@ php bin/magento c:f
 ```
 
 ## API endpoint
-All these methods are available under this URL `/V1/newsletter/subscription/:email`:
-- (GET method) Check if user is subscribed
-- (POST method) Add a user subscription
-- (DELETE method) Unsubscribe a user
+All the following methods are available through this URL `/V1/newsletter/subscription/:email`:
+- (GET) Check if user is subscribed
+- (POST) Add a user subscription
+- (DELETE) Unsubscribe a user
 
 ## Magento 1 version
 This module is available also for Magento 1, always on [Github](https://github.com/ittweb/vsfapi-magento1-newsletter).
