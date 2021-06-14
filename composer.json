@@ -2,7 +2,7 @@
     "name": "ittweb/newsletter",
     "description": "Creates an API ENDPOINT that enables to subscribe to the Magento 2 newsletter",
     "type": "magento2-module",    
-    "version": "1.0.0",
+    "version": "1.0.1",
     "authors": [{
         "name": "Roberto Bianchi",
         "email": "rbianchi@ittweb.net"
@@ -11,7 +11,7 @@
         "MIT"
     ],
     "require": {
-      "php": "~7.1.3||~7.2.0||~7.3.0"
+      "php": "~7.1.3||~7.2.0||~7.3.0||~7.4.0"
     },
     "autoload": {
         "files": [
