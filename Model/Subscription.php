@@ -52,6 +52,10 @@ class Subscription implements SubscriptionInterface
     {
         $websiteId = $this->storemanager->getStore()->getWebsiteId();
         $customerId = $this->customer->create()->setWebsiteId($websiteId)->loadByEmail($email)->getId();
-        $this->subscriberFactory->create()->unsubscribeCustomerById($customerId);
+        if ($customerId) {
+            $this->subscriberFactory->create()->unsubscribeCustomerById($customerId);
+        } else {
+            $this->subscriberFactory->create()->loadByEmail($email)->unsubscribe();
+        }
     }
 }
